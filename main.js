@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const loadHDR = async () => {
       const hdrLoader = new RGBELoader();
       try {
-        const texture = await hdrLoader.loadAsync('../../assets/hdr/studio.hdr');
+        const texture = await hdrLoader.loadAsync('./assets/hdr/studio.hdr');
         texture.mapping = THREE.EquirectangularReflectionMapping;
         scene.environment = texture;
         scene.background = null; // Optional: Set HDR as background
