@@ -74,8 +74,8 @@ document.addEventListener('DOMContentLoaded', () => {
     let animationPlayed = false; // Prevent playing animation multiple times
 
     try {
-      chestModel = await loadGLTF('../../assets/models/Old_Chest.glb');
-      secondModel = await loadGLTF('../../assets/models/Place_Object.glb');
+      chestModel = await loadGLTF('./assets/models/Old_Chest.glb');
+      secondModel = await loadGLTF('./assets/models/Place_Object.glb');
     } catch (error) {
       console.error('Error loading models:', error);
     }
@@ -129,7 +129,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 500);
 
         // 🎵 Play chest opening sound
-        const audio = new Audio('../../assets/audio/chest_open.mp3');
+        const audio = new Audio('./assets/audio/chest_open.mp3');
         audio.play();
       }
     };
