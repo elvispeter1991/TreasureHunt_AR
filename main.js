@@ -201,7 +201,7 @@ document.addEventListener('DOMContentLoaded', () => {
       if (!modelPlaced && chestModel && secondModel) {
         // Clone and position the chest model on the floor
         chestClone = chestModel.scene.clone(); // Store in global variable
-        chestClone.position.set(0, -1.5, 3.5);
+        chestClone.position.set(0, -1.5, 4.5);
         chestClone.scale.set(1.3, 1.3, -1.3);
 
         // ✅ Apply HDR to the chest
